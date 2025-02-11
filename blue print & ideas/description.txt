@@ -1,0 +1,9 @@
+A personal portfolio website that highlights your skills, projects, experience, and contact
+information. It should include smooth animations, a clean layout, and a responsive design.
+Technologies & Topics:
+
+- HTML, CSS, JavaScript
+- Responsive Design (CSS Grid & Flexbox)
+- JavaScript Animations (GSAP or pure JS)
+- Dark/Light Mode Toggle
+- Contact Form with Form Validation

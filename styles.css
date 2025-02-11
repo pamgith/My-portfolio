@@ -1,0 +1,221 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Color Variables */
+  --primary-color: #173b2e;
+  --secondary-color: #12191b;
+  --accent-color1: #0c9e68;
+  --accent-color2: #d4b996;
+  --font-color1: #fff;
+  --font-color2: #c9c9c9;
+
+  /* Typography */
+  --font-heading: "Bricolage Grotesque", serif;
+  --font-body: "Inter", serif;
+
+  /* Spacing */
+  --section-padding: 4rem;
+  --gap: 1.5rem;
+
+  /* Font Size */
+  --very-small: 1rem;
+  --small: 1.4rem;
+  --small-ToMedium: 1.6rem;
+  --medium: 1.8rem;
+  --medium-Tolarge: 2.2rem;
+  --large: 2.8rem;
+  --extra-large: 6rem;
+}
+
+/********** GENERAL STYLES ***********/
+.btn {
+  padding: 1rem 3rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  font-style: normal;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  border-radius: 0.5rem;
+}
+
+header {
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-column-gap: 1rem;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+#logo {
+  font-size: var(--medium-Tolarge);
+  text-decoration: none;
+  font-family: var(--font-body);
+  color: var(--font-color1);
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  position: relative;
+  text-decoration: none;
+  color: var(--font-color2);
+  font-size: var(--medium);
+  font-family: var(--font-body);
+  transition: color 0.3s ease;
+  padding: 0 1rem;
+}
+
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.7rem;
+  width: 0%;
+  height: 3px;
+  background-color: var(--accent-color1);
+  transition: width 0.4s ease-in-out;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+nav ul li a:hover {
+  color: var(--font-color1);
+}
+#startBtn {
+  display: inline-block;
+  padding: 1rem 2.6rem;
+  font-size: var(--small);
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(
+    45deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+#startBtn:hover {
+  box-shadow: 0 2px 4px var(--accent-color1);
+}
+/********HERO Section**********/
+
+.hero {
+  width: 70%;
+  height: 100vh;
+  margin: 4rem auto 0 auto;
+  /* background-color: #00a3e0; */
+  text-align: center;
+  padding: 5rem 2rem;
+}
+
+#hero-header {
+  font-family: var(--font-heading), sans-serif;
+  font-size: var(--extra-large);
+  line-height: 1.3;
+  color: var(--font-color2);
+}
+
+#hero-header span {
+  color: var(--accent-color1);
+}
+
+#hero-subheader {
+  font-family: var(--font-body);
+  font-size: 2rem;
+  color: var(--font-color2);
+  margin-top: 3rem;
+  padding: 0 6rem;
+  line-height: 1.6;
+}
+
+#hero-subheader span {
+  display: inline-block;
+}
+
+.colored-title {
+  color: var(--accent-color1);
+}
+
+#bookingBtn {
+  display: inline-block;
+  margin-top: 2rem;
+  background: linear-gradient(45deg, #3fad3f, #79ecc4);
+  font-size: var(--medium);
+  font-family: var(--font-body);
+  font-weight: 600;
+  transition: transform 0.3s ease;
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+#bookingBtn:hover {
+  transform: scale(1.1);
+}
+
+.tagline {
+  margin-top: 3rem;
+  font-size: var(--medium);
+  color: var(--accent-color2);
+  font-family: var(--font-body);
+}
+
+.customer-logo {
+  max-width: 60rem;
+  /* background-color: pink; */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 2rem auto;
+}
+
+.customer-logo img {
+  max-width: 5rem;
+  max-height: 5rem;
+  border-radius: 100%;
+}
