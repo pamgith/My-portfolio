@@ -10,8 +10,12 @@
   --secondary-color: #12191b;
   --accent-color1: #0c9e68;
   --accent-color2: #d4b996;
+  --accent-color3: #d4a96e;
+  --accent-color4: #4a90e2;
   --font-color1: #fff;
   --font-color2: #c9c9c9;
+  --font-color3: #222;
+  --projects-bg-color: #c1dbb3; /* New color for projects page background */
 
   /* Typography */
   --font-heading: "Bricolage Grotesque", serif;
@@ -54,7 +58,7 @@ main {
   width: 100%;
   height: 100%;
   background: linear-gradient(
-    to bottom,
+    to top,
     var(--primary-color),
     var(--secondary-color)
   );
@@ -161,7 +165,6 @@ nav ul li a:hover {
   width: 70%;
   height: 100vh;
   margin: 3rem auto 0 auto;
-  /* background-color: #00a3e0; */
   text-align: center;
   padding: 4rem 2rem;
 }
@@ -174,7 +177,6 @@ nav ul li a:hover {
 }
 
 .upper-hero {
-  /* border: 2px solid red; */
   margin-bottom: 6rem;
 }
 #hero-header span {
@@ -205,13 +207,14 @@ nav ul li a:hover {
   font-size: var(--medium);
   font-family: var(--font-body);
   font-weight: 600;
-  transition: transform 0.3s ease;
   text-decoration: none;
+  transition: all 0.3s ease;
   color: var(--secondary-color);
 }
 
 #bookingBtn:hover {
   transform: scale(1.1);
+  background: linear-gradient(45deg, #79ecc4, #3fad3f);
 }
 
 .tagline {
@@ -244,4 +247,251 @@ nav ul li a:hover {
 .customer-logo img:hover {
   transform: scale(1.1);
   filter: none;
+}
+
+/********** PROJECTS SECTION ***********/
+.projects {
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(30rem, 1fr));
+  grid-gap: 1.5rem;
+  row-gap: 4rem;
+  padding: 6rem 1rem;
+
+  text-align: center;
+}
+.section-header {
+  grid-column: 1 / -1;
+  font-size: var(--extra-large);
+  font-family: var(--font-heading);
+  color: #173b2e;
+  padding-bottom: 4rem;
+}
+.project {
+  padding-bottom: 3rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.project:hover {
+  transform: translateY(-0.5rem);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(
+    45deg,
+    var(--accent-color2),
+    var(--accent-color3)
+  );
+}
+.project-image {
+  width: 100%;
+  height: 20rem;
+  border-radius: 0.5rem;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.project-info {
+  margin-top: 2rem;
+}
+.project-title {
+  font-size: var(--small-ToMedium);
+  padding-bottom: 1rem;
+  font-family: var(--font-body);
+}
+.project-title span {
+  font-family: var(--font-heading);
+  color: var(--accent-color1);
+  font-size: var(--medium);
+  margin-right: 0.5rem;
+}
+.project-description {
+  font-family: var(--font-body);
+  font-size: var(--very-small);
+  color: var(--font-color3);
+  margin-bottom: 1rem;
+}
+.project-footer {
+  margin-top: 2rem;
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 1rem;
+}
+.result {
+  font-family: var(--font-body);
+  font-size: var(--small-ToMedium);
+  color: var(--primary-color);
+}
+
+.viewProjectBtn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: linear-gradient(
+    45deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  font-size: var(--very-small);
+  font-family: var(--font-body);
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  color: var(--font-color1);
+  border-radius: 0.5rem;
+}
+
+.viewProjectBtn:hover {
+  transform: scale(1.1);
+  background: linear-gradient(45deg, #79ecc4, #3fad3f);
+}
+
+.projects .cta-button {
+  grid-row: 2;
+  grid-column: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    to bottom,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  border-radius: 1rem;
+}
+
+.cta-button a {
+  color: white;
+  background-color: transparent;
+  border: 1px solid var(--accent-color1);
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  font-size: var(--medium-Tolarge);
+  font-family: var(--font-body);
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border-radius: 1rem;
+  box-shadow: 0 6px 20px rgba(12, 158, 104, 0.3);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  padding: 2rem 4rem;
+}
+
+.cta-button a:hover {
+  background-color: #1c2630;
+  transform: translateY(-0.5rem);
+  box-shadow: 0 0 2.5rem var(--accent-color1), 0 0 10rem var(--accent-color1);
+  transform: scale(1.02);
+}
+
+.cta-button a span {
+  position: relative;
+  z-index: 1;
+}
+
+.logo-show {
+  background-color: var(--primary-color);
+  position: relative;
+  padding: 3rem 1rem 0 1rem;
+  text-align: center;
+}
+
+.box-logo {
+  width: 60%;
+  height: 60%;
+  box-shadow: 0 0 2rem var(--accent-color1);
+  position: absolute;
+  top: 15%;
+  left: 20%;
+  background-image: url("Images/site-logo.png");
+  cursor: pointer;
+  background-size: cover;
+  background-position: center;
+}
+
+.box-logo:hover {
+  box-shadow: 0 0 4rem var(--accent-color1);
+}
+.logo-show svg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.decorative-box {
+  background-image: url("Images/blob-scene-haikei.png");
+  position: relative;
+}
+
+.decorative-text1 {
+  width: 14rem;
+  height: 14rem;
+  position: absolute;
+  bottom: 10%;
+  left: 8%;
+  font-size: 2rem;
+  font-family: var(--font-heading);
+  color: var(--font-color2);
+}
+
+.decorative-text2 {
+  width: 14rem;
+  height: 14rem;
+  position: absolute;
+  top: 10%;
+  right: 8%;
+  font-size: 2rem;
+  font-family: var(--font-heading);
+  color: var(--font-color2);
+}
+
+.projects .cta-button2 {
+  grid-row: 4;
+  grid-column: 2;
+}
+
+.decorative-box .btn {
+  position: absolute;
+  bottom: 5rem;
+  right: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    to bottom,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  border-radius: 1rem;
+}
+
+.decorative-box .btn {
+  color: white;
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  font-size: var(--medium-Tolarge);
+  font-family: var(--font-body);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 20px rgba(12, 158, 104, 0.3);
+  overflow: hidden;
+}
+
+.decorative-box .btn:hover {
+  background-color: #1c2630;
+  transform: translateY(-0.5rem);
+  box-shadow: 0 0 2rem var(--accent-color1), 0 0 6rem var(--accent-color1);
+  transform: scale(1.01);
 }
