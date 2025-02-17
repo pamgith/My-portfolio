@@ -37,9 +37,9 @@
 
 /********** GENERAL STYLES ***********/
 .btn {
-  padding: 1rem 3rem;
+  padding: 1rem 3.8rem;
   border: none;
-  border-radius: 6px;
+  border-radius: 0.6rem;
   cursor: pointer;
 }
 
@@ -63,9 +63,12 @@ main {
     var(--secondary-color)
   );
   border-radius: 0.5rem;
+  padding-top: 8rem;
 }
 
 header {
+  position: fixed;
+  top: 0;
   width: 100%;
   margin: 0 auto;
   display: grid;
@@ -73,7 +76,13 @@ header {
   grid-column-gap: 1rem;
   align-items: center;
   text-align: center;
-  padding: 2rem 0;
+  padding: 1rem 0;
+  z-index: 100;
+}
+
+.header-scrolled {
+  background-color: rgba(28, 38, 41, 0.6);
+  backdrop-filter: blur(6px);
 }
 
 #logo {
@@ -205,7 +214,7 @@ nav ul li a:hover {
   margin-top: 2rem;
   background: linear-gradient(45deg, #3fad3f, #79ecc4);
   font-size: var(--medium);
-  font-family: var(--font-body);
+  font-family: var(--font-heading);
   font-weight: 600;
   text-decoration: none;
   transition: all 0.3s ease;
