@@ -10,6 +10,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+    <script src="https://kit.fontawesome.com/9e9151cf18.js" crossorigin="anonymous"></script>
     <title>Portfolio</title>
     <script src="script.js" defer></script>
   </head>
@@ -22,11 +23,11 @@
       </div>
       <nav>
         <ul>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Reviews</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
       <div><button id="startBtn" class="btn">Start Here</button></div>
@@ -93,189 +94,364 @@
         </div>
       </section>
     </main>
+     <!-- ABOUT SECTION -->
+     <section class="about" id="about">
+      <div class="about-owner">
+        <div class="about-owner-image"></div>
+        <div class="about-title">
+          <p>About Me</p>
+        </div>
+        <div class="about-owner-paragraph">
+          <p>
+            I'm a freelance web developer with a passion for crafting clean,
+            functional, and visually engaging websites. With over two years of
+            experience, I've built websites for clients, along with developing
+            simple apps and games that push creativity and functionality. My
+            skill set includes HTML, CSS, JavaScript, React, and Node.js, among
+            other modern web technologies. Whether it's bringing a brand's
+            vision to life or developing interactive experiences, I focus on
+            writing efficient code and delivering seamless user experiences.
+            Always eager to learn and innovate, I thrive on turning ideas into
+            reality—one line of code at a time.
+          </p>
+        </div>
+      </div>
+      <div class="about-journey">
+        <div class="myImage"></div>
+        <div class="my-journey">
+          <p>
+            I've always been drawn to creating and building things, and when I
+            discovered coding, it felt like the perfect blend of logic and
+            creativity. What started as simple curiosity turned into a passion
+            as I realized I could bring ideas to life through websites and
+            applications. The ability to design and develop something beautiful
+            and functional—something that helps businesses grow or enhances user
+            experiences—is what drives me every day. Coding gives me the freedom
+            to create, problem-solve, and keep learning, which is what I love
+            most about it.
+          </p>
+        </div>
+      </div>
+    </section>
+
+
     <!-- Projects Section -->
-    <section class="projects">
-      <h2 class="section-header">PROJECTS</h2>
-      <div class="project">
-        <div class="project-image">
-          <img
-            src="Images/projects/mr._zaban.png"
-            alt="mr.zaban website project"
-          />
-        </div>
-        <div class="project-info">
-          <h3 class="project-title"><span>Mr. Zaban</span>English Institute</h3>
-          <p class="project-description">
-            Join our interactive online English classes and improve your
-            language skills from the comfort of your home. Our experienced
-            instructors provide personalized lessons to help you achieve your
-            goals, whether it's for business, travel, or personal growth.
-          </p>
-          <div class="project-footer">
-            <p class="result">74% increase in course enrollement</p>
-            <a href="#" class="btn viewProjectBtn">View Project &rightarrow;</a>
+
+    <section class="projects" id="projects">
+      <div class="projects-wrapper">
+        <h2 class="section-header projects-header">PROJECTS</h2>
+        <div class="project">
+          <div class="project-image">
+            <img
+              src="Images/projects/650ffac7a492f626504493.png"
+              alt="mr.zaban website project"
+            />
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">
+              <span>Mr. Zaban</span>English Institute
+            </h3>
+            <p class="project-description">
+              Join our interactive online English classes to improve your
+              language skills from home with personalized lessons from
+              experienced instructors for business, travel, or personal growth.
+            </p>
+            <div class="project-footer">
+              <p class="result">74% increase in course enrollement</p>
+              <a href="#" class="btn viewProjectBtn"
+                >View Project &rightarrow;</a
+              >
+            </div>
           </div>
         </div>
-      </div>
-      <div class="cta-button">
-        <a href="#contact"><span>Contact Me</span></a>
-      </div>
-
-      <div class="project">
-        <div class="project-image">
-          <img src="Images/Projects/history-in-pictures.jpg" alt="project 3" />
-        </div>
-        <div class="project-info">
-          <h3 class="project-title">
-            <span>History in Pictures</span>for history lovers
-          </h3>
-          <p class="project-description">
-            Explore the rich tapestry of history through captivating images and
-            stories. Our platform brings historical events to life, offering a
-            visual journey that educates and inspires. Perfect for history
-            enthusiasts and curious minds alike.
-          </p>
-          <div class="project-footer">
-            <p class="result">5 times more subscribers</p>
-            <a href="#" class="btn viewProjectBtn">View Project &rightarrow;</a>
+        <div class="project">
+          <div class="project-image">
+            <img
+              src="Images/Projects/history-in-pictures.jpg"
+              alt="project 3"
+            />
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">
+              <span>History in Pictures</span>for history lovers
+            </h3>
+            <p class="project-description">
+              xplore the rich history through captivating images and stories
+              with our platform, bringing events to life in a visual journey
+              that educates, inspires, and engages curious minds.
+            </p>
+            <div class="project-footer">
+              <p class="result">5 times more subscribers</p>
+              <a href="#" class="btn viewProjectBtn"
+                >View Project &rightarrow;</a
+              >
+            </div>
           </div>
         </div>
-      </div>
-
-      <div class="logo-show">
-        <a class="box-logo" href="#"></a>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-          <path
-            fill="173b2e"
-            fill-opacity="1"
-            d="M0,0L80,48C160,96,320,192,480,202.7C640,213,800,139,960,112C1120,85,1280,107,1360,117.3L1440,128L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
-          ></path>
-        </svg>
-      </div>
-
-      <div class="project">
-        <div class="project-image">
-          <img
-            src="Images/Projects/pamchal-store.jpg"
-            alt="pamchal store website project"
-          />
-        </div>
-        <div class="project-info">
-          <h3 class="project-title">
-            <span>Pamchal Store</span>Cosmetics & Skincare
-          </h3>
-          <p class="project-description">
-            Discover a wide range of high-quality cosmetics and skincare
-            products at Pamchal Store. From rejuvenating serums to luxurious
-            moisturizers, our carefully curated selection is designed to enhance
-            your natural beauty. Shop with confidence and find the perfect
-            products to suit your unique skin needs.
-          </p>
-          <div class="project-footer">
-            <p class="result">65% increase in sell</p>
-            <a href="#" class="btn viewProjectBtn">View Project &rightarrow;</a>
+        <div class="project middle-project">
+          <div class="project-image">
+            <img
+              src="Images/Projects/pamchal-store.jpg"
+              alt="pamchal store website project"
+            />
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">
+              <span>Pamchal Store</span>Cosmetics & Skincare
+            </h3>
+            <p class="project-description">
+              Discover a wide range of high-quality cosmetics and skincare
+              products at Pamchal Store. From rejuvenating serums to luxurious
+              moisturizers, our carefully curated selection is designed to
+              enhance your natural beauty. Shop with confidence and find the
+              perfect products to suit your unique skin needs.
+            </p>
+            <div class="project-footer">
+              <p class="result">65% increase in sell</p>
+              <a href="#" class="btn viewProjectBtn"
+                >View Project &rightarrow;</a
+              >
+            </div>
           </div>
         </div>
-      </div>
-
-      <div class="decorative-box">
-        <p class="decorative-text1">
-          Great projects come with great feedback. Check it out!
-        </p>
-        <p class="decorative-text2">Let's create something awesome!</p>
-        <a class="btn" href="#">Testimonials</a>
-      </div>
-      <div class="project">
-        <div class="project-image">
-          <img
-            src="Images/Projects/weather.jpg"
-            alt="weather forcast website project"
-          />
-        </div>
-        <div class="project-info">
-          <h3 class="project-title">
-            <span>Weather graph</span>weather where you live
-          </h3>
-          <p class="project-description">
-            Stay ahead of the weather with our accurate and up-to-date
-            forecasts. Whether you're planning your day or preparing for a trip,
-            our weather forecast website provides detailed information on
-            temperature, precipitation, and wind conditions. Trust us to keep
-            you informed and ready for any weather.
-          </p>
-          <div class="project-footer">
-            <p class="result">45% increase in signup requests</p>
-            <a href="#" class="btn viewProjectBtn">View Project &rightarrow;</a>
+        <div class="project">
+          <div class="project-image">
+            <img
+              src="Images/Projects/weather.jpg"
+              alt="weather forcast website project"
+            />
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">
+              <span>Weather graph</span>weather where you live
+            </h3>
+            <p class="project-description">
+              Stay ahead of the weather with accurate, up-to-date forecasts on
+              temperature, precipitation, and wind conditions, helping you plan
+              your day or trip with confidence.
+            </p>
+            <div class="project-footer">
+              <p class="result">45% increase in signup requests</p>
+              <a href="#" class="btn viewProjectBtn"
+                >View Project &rightarrow;</a
+              >
+            </div>
           </div>
         </div>
-      </div>
-
-      <div class="cta-button cta-button2">
-        <a href="#contact"><span>Contact Me</span></a>
-      </div>
-      <div class="project">
-        <div class="project-image">
-          <img
-            src="Images/Projects/casual-games.jpg"
-            alt="casual games website project"
-          />
-        </div>
-        <div class="project-info">
-          <h3 class="project-title">
-            <span>Casual Games</span>simple games to enjoy
-          </h3>
-          <p class="project-description">
-            Dive into a world of fun with our collection of casual games.
-            Whether you're looking to unwind after a long day or challenge your
-            friends, our website offers a variety of simple yet engaging games
-            for all ages. Enjoy hours of entertainment and discover new
-            favorites.
-          </p>
-          <div class="project-footer">
-            <p class="result">90% increase in played hours</p>
-            <a href="#" class="btn viewProjectBtn">View Project &rightarrow;</a>
+        <div class="project">
+          <div class="project-image">
+            <img
+              src="Images/Projects/casual-games.jpg"
+              alt="casual games website project"
+            />
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">
+              <span>Casual Games</span>simple games to enjoy
+            </h3>
+            <p class="project-description">
+              Dive into a world of fun with our collection of casual games,
+              offering simple yet engaging entertainment for all ages, whether
+              you want to unwind or challenge your friends.
+            </p>
+            <div class="project-footer">
+              <p class="result">90% increase in played hours</p>
+              <a href="#" class="btn viewProjectBtn"
+                >View Project &rightarrow;</a
+              >
+            </div>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- SERVICES SECTION -->
+    <section class="services" id="services">
+      <div class="services-info">
+        
+          <h2 class="services-header">
+            My Services : Building, Optimizing, and Elevating Your Online
+            Presence
+          </h2>
+          <p class="services-paragraph">
+            Your website is more than just a digital space—it's a powerful tool
+            for growth. I offer a full range of services to design, develop, and
+            optimize websites that not only look great but also perform
+            exceptionally. Whether you need a stunning web design, better search
+            engine rankings, a high-converting online store, or ongoing
+            maintenance, I ensure your site is built for success.
+          </p>
+        </div>
+      </div>
+      <div class="services-boxes">
+        <div class="service-box box-1">
+          <div class="service-box-text">
+            <h3>Web Design</h3>
+            <p>
+              I create visually appealing, user-friendly websites that reflect
+              your brand's identity while ensuring a seamless experience across
+              all devices. Every design is crafted with a focus on aesthetics,
+              usability, and conversion, making sure your visitors stay engaged.
+            </p>
+          </div>
+          <div class="service-box-image img-1">
+
+          </div>
+        </div>
+        <div class="service-box box-2">
+          <div class="service-box-text">
+            <h3>SEO (Search Engine Optimization)</h3>
+            <p>
+              A beautiful website is only effective if people can find it. I
+              optimize your site for search engines by improving site structure,
+              keyword strategy, page speed, and technical SEO. This helps your
+              site rank higher, attract more organic traffic, and reach the right
+              audience.
+            </p>
+          </div>
+          <div class="service-box-image img-2">
+            
+          </div>
+          
+        </div>
+        <div class="service-box box-3">
+          <div class="service-box-text">
+            <h3>E-Commerce Solutions</h3>
+          <p>
+            From small online stores to full-scale e-commerce platforms, I build
+            powerful and secure shopping experiences. Whether using Shopify,
+            WooCommerce, or custom solutions, I ensure seamless product
+            management, easy checkout processes, and mobile-friendly designs to
+            maximize conversions.
+          </p>
+          </div>
+          <div class="service-box-image img-3">
+            
+          </div>
+        </div>
+        <div class="service-box box-4">
+          <div class="service-box-text">
+            <h3>Website Maintenance & Optimization</h3>
+            <p>
+              A website needs ongoing care to stay secure, fast, and up-to-date. I
+              provide regular updates, security checks, performance enhancements,
+              and troubleshooting to keep your site running smoothly. This ensures
+              a great user experience while preventing potential issues down the
+              road.
+            </p>
+          </div>
+          <div class="service-box-image img-4">
+            
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
     <!-- TESTIMONIALS -->
-    <section class="testimonials">
+    <section class="testimonials" id="testimonials">
       <div class="testimonial-box">
         <h2 class="section-header testimonial-header">
           See What Our Clients Say About Us
         </h2>
         <div class="testimonial-slider">
-          <div class="img-box">
-            <img src="Images/testimonial-img/jane.jfif" alt="" />
+          <div class="slide active" data-testimony="1">
+            <div class="img-box">
+              <img src="Images/testimonial-img/jane.jfif" alt="" />
+            </div>
+            <p class="testimony">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+              nostrum inventore corporis voluptas similique minus accusamus rem
+              quia veritatis. Officiis quaerat perferendis consequuntur beatae
+              aut libero minima et dolore sed?
+            </p>
+            <p class="customer-name">
+              Jane Medlin <span>CEO of Mr. Zaban co</span>
+            </p>
+            <p class="rating-stars"></p>
           </div>
-          <p class="testimony">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-            nostrum inventore corporis voluptas similique minus accusamus rem
-            quia veritatis. Officiis quaerat perferendis consequuntur beatae aut
-            libero minima et dolore sed?
-          </p>
-          <p class="customer-name">
-            Jane Medlin <span>CEO of Mr. Zaban co</span>
-          </p>
-          <p class="rating-stars"></p>
+
+          <div class="slide" data-testimony="2">
+            <div class="img-box">
+              <img src="Images/testimonial-img/Abby.jfif" alt="" />
+            </div>
+            <p class="testimony">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+              nostrum inventore corporis voluptas similique minus accusamus rem
+              quia veritatis. Officiis quaerat perferendis consequuntur beatae
+              aut libero minima et dolore sed?
+            </p>
+            <p class="customer-name">
+              Abby powell <span>editor in chief in history in pictures</span>
+            </p>
+            <p class="rating-stars"></p>
+          </div>
+
+          <div class="slide" data-testimony="3">
+            <div class="img-box">
+              <img src="Images/testimonial-img/karl.jfif" alt="" />
+            </div>
+            <p class="testimony">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+              nostrum inventore corporis voluptas similique minus accusamus rem
+              quia veritatis. Officiis quaerat perferendis consequuntur beatae
+              aut libero minima et dolore sed?
+            </p>
+            <p class="customer-name">
+              Karl Benet <span>Founder of Pamchal Stotre</span>
+            </p>
+            <p class="rating-stars"></p>
+          </div>
+
+          <div class="slide" data-testimony="4">
+            <div class="img-box">
+              <img src="Images/testimonial-img/Mike.jfif" alt="" />
+            </div>
+            <p class="testimony">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+              nostrum inventore corporis voluptas similique minus accusamus rem
+              quia veritatis. Officiis quaerat perferendis consequuntur beatae
+              aut libero minima et dolore sed?
+            </p>
+            <p class="customer-name">
+              Mike Mendez <span>Admin in Weather Graph</span>
+            </p>
+            <p class="rating-stars"></p>
+          </div>
+
+          <div class="slide" data-testimony="5">
+            <div class="img-box">
+              <img src="Images/testimonial-img/nadia.jfif" alt="" />
+            </div>
+            <p class="testimony">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+              nostrum inventore corporis voluptas similique minus accusamus rem
+              quia veritatis. Officiis quaerat perferendis consequuntur beatae
+              aut libero minima et dolore sed?
+            </p>
+            <p class="customer-name">
+              Nadia Hadid <span>CEO of Casual Games</span>
+            </p>
+            <p class="rating-stars"></p>
+          </div>
           <div class="ourCustomers">
             <p>Proud to have partnered with these amazing clients</p>
           </div>
         </div>
         <div class="custumer-images">
-          <div class="customer-thumbnail testimony-selector">
-            <img src="Images/testimonial-img/Abby.jfif" alt="" />
-          </div>
-          <div class="customer-thumbnail testimony-selector">
+          <div class="customer-thumbnail testimony-selector" data-testimony="1">
             <img src="Images/testimonial-img/jane.jfif" alt="" />
           </div>
-          <div class="customer-thumbnail testimony-selector">
+          <div class="customer-thumbnail testimony-selector" data-testimony="2">
+            <img src="Images/testimonial-img/Abby.jfif" alt="" />
+          </div>
+          <div class="customer-thumbnail testimony-selector" data-testimony="3">
             <img src="Images/testimonial-img/karl.jfif" alt="" />
           </div>
-          <div class="customer-thumbnail testimony-selector">
+          <div class="customer-thumbnail testimony-selector" data-testimony="4">
             <img src="Images/testimonial-img/Mike.jfif" alt="" />
           </div>
-          <div class="customer-thumbnail testimony-selector">
+          <div class="customer-thumbnail testimony-selector" data-testimony="5">
             <img src="Images/testimonial-img/nadia.jfif" alt="" />
           </div>
           <div class="customer-thumbnail testimony-selector">
@@ -287,5 +463,53 @@
         </div>
       </div>
     </section>
+    <!-- CONTACT SECTION -->
+    <section class="contact" id="contact">
+      <div class="contact-motto">
+        <h4><span></span>Reach Out to Us</h4>
+        <h2>Let's Create Something Amazing Together</h2>
+        <p>Whether you have a project in mind, a question to ask, or just want to say hello, we're here to listen. Reach out, and let's turn ideas into reality!</p>
+      </div>
+      <div class="form-container">
+        <form action="" class="contact-form">
+          <input type="text" id="name" name="name" required placeholder="Your Name">
+          <input type="email" id="email" name="email" placeholder="Email Address" required>
+          <input type="text" id="companyName" name="companyName" placeholder="Company Name">
+          <textarea name="projectDescription" id="projectDescription" placeholder="Project Description..."  rows="8" required></textarea>
+          <textarea name="message" id="message" placeholder="Message..." rows="8"></textarea>
+          <button type="submit" id="submitBtn">SEND</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-wrapper">
+      <div class="footer-description">
+          <a href="#">Digital Nomad</a>
+        
+        <p>Quality and performance tailored to your needs.</p>
+      </div>
+      <div class="footer-contact">
+        <ul class="footer-conatct">
+          <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+          <li><a href="https://x.com/?lang=en"><i class="fa-brands fa-x-twitter"></i></a></li>
+          <li><a href="https://www.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a></li>
+          <li><a href="https://telegram.org/"><i class="fa-brands fa-telegram"></i></a></li>
+          <li><a href="tel:09147826704"><i class="fa-solid fa-mobile-screen-button"></i></a></li>
+          <li><a href="mailto:maxny@hotmail.com"><i class="fa-solid fa-envelope"></i></a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="copyright"><i class="fa-regular fa-copyright"></i> 2024 digital nomad. all rights reserved.</p>
+    </footer>
   </body>
 </html>
